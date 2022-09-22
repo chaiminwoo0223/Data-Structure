@@ -4,7 +4,7 @@ public class hw5_1 {
 
 	public static void main(String[] args) {
 		System.out.println("hw5_1 : 최민우");
-		
+
 		//MyArrayList형 리스트 객체 list를 생성
 		MyArrayList list = new MyArrayList(100);
 		// 1~10
@@ -15,13 +15,13 @@ public class hw5_1 {
 		//3개 삽입
 		list.add(0,99);
 		list.add(3,999);
-		list.add(12,999);
+		list.add(12,9999);
 		System.out.println(list);
 	}
 	//배열을 이용하여 정수 리스트를 구현하는 클래스
-	
-	}
-class MyArrayList{
+
+}
+class MyArrayList{       //public class hw5_1과 충돌을 피하기 위해서, class MyArrayList로 작성
 	private int[] array; //원소를 저장할 배열
 	private int numItems; //배열에 저장된 원소 수(리스트 길이)
 	public static final int DEFAULT_CAPACITY = 100; //배열의 기본 용량
@@ -35,39 +35,28 @@ class MyArrayList{
 		array = new int[capacity];
 		numItems = 0;
 	}
-	//삽입
+	//대입
 	public void add(int item) {
 		if(numItems < array.length)
 			array[numItems++] = item;
 	}
+	//삽입
 	public void add(int index,int item) {
+		for(int i=numItems;i>=index;i--) {
+			array[i+1] = array[i];
+			numItems++;
+		}
 		array[index] = item;
 	}
 	@Override
 	public String toString() {
 		String result = "";
-		for(int i=0;i<array.length;i++) {
-			result += array[i] + " ";
+		for(int j=0;j<array.length;j++) {
+			if(array[j] != 0)
+				result += array[j] + " ";
+			else
+				break;
 		}
 		return result;
 	}
 }
-		public void add(int item) {
-			if(numItems < array.length)
-				array[numItems++] = item;
-		}
-		public void add(int index,int item) {
-			array[index] = item;
-		}
-		@Override
-		public String toString() {
-			String result = "";
-			for(int i=0;i<numItems;i++) {
-				result += array[i] + " ";
-			}
-			return result;
-		}
-	}
-}
-
-
