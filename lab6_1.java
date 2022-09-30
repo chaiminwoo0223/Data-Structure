@@ -4,33 +4,33 @@ import java.util.LinkedList;
 
 public class lab6_1 {
 	public static void main(String[] args) {
-		System.out.println("lab6_1 : ÃÖ¹Î¿ì");
+		System.out.println("lab6_1 : ìµœë¯¼ìš°");
 		
-		// Á¤¼ö¿ø¼Ò¸¦ÀúÀåÇÒLinkedListÇü¸®½ºÆ®°´Ã¼list¸¦»ı¼º
+		// ì •ìˆ˜ì›ì†Œë¥¼ì €ì¥í• LinkedListí˜•ë¦¬ìŠ¤íŠ¸ê°ì²´listë¥¼ìƒì„±
 		LinkedList<Integer> list = new LinkedList<Integer>();
 		
-		//list¿¡ 2°¡ Á¸ÀçÇÏ´ÂÁö ¿©ºÎ Ãâ·Â
+		//listì— 2ê°€ ì¡´ì¬í•˜ëŠ”ì§€ ì—¬ë¶€ ì¶œë ¥
 		System.out.println(list.contains(2));
 		
-		// listÀÇ¸Ç¾Õ¿¡1, 2¸¦, ¸ÇµÚ¿¡3, 4¸¦Â÷·Ê´ë·Î»ğÀÔÇÑÈÄ,¸®½ºÆ®Ãâ·Â
+		// listì˜ë§¨ì•ì—1, 2ë¥¼, ë§¨ë’¤ì—3, 4ë¥¼ì°¨ë¡€ëŒ€ë¡œì‚½ì…í•œí›„,ë¦¬ìŠ¤íŠ¸ì¶œë ¥
 		list.addFirst(1); 
 		list.addFirst(2); 
 		list.addLast(3);
 		list.addLast(4);
 		System.out.println(list);
 		
-		// list¿¡2, 4, 6ÀÌÁ¸ÀçÇÏ´ÂÁö¿©ºÎÃâ·Â
+		// listì—2, 4, 6ì´ì¡´ì¬í•˜ëŠ”ì§€ì—¬ë¶€ì¶œë ¥
 		System.out.println(list.contains(2));
 		System.out.println(list.contains(4));
 		System.out.println(list.contains(6));
 		
-		//list ±æÀÌ Ãâ·Â
+		//list ê¸¸ì´(í¬ê¸°) ì¶œë ¥
 		System.out.println(list.size());
 		
-		// listÀÇ¸Ç¾Õ¿ø¼Ò, ¸ÇµÚ¿ø¼Ò¸¦»èÁ¦ÇÑÈÄ, µÎ¿ø¼ÒÀÇÇÕÃâ·Â,¸®½ºÆ®Ãâ·Â
+		// listì˜ë§¨ì•ì›ì†Œ, ë§¨ë’¤ì›ì†Œë¥¼ì‚­ì œí•œí›„, ë‘ì›ì†Œì˜í•©ì¶œë ¥,ë¦¬ìŠ¤íŠ¸ì¶œë ¥
 		System.out.println(list.removeFirst() + list.removeLast());
 		System.out.println(list);
-		// listÀÇ¸Ç¾Õ¿ø¼Ò, ¸ÇµÚ¿ø¼Ò¸¦»èÁ¦ÇÑÈÄ, µÎ¿ø¼ÒÀÇÇÕÃâ·Â,¸®½ºÆ®Ãâ·Â
+		// listì˜ë§¨ì•ì›ì†Œ, ë§¨ë’¤ì›ì†Œë¥¼ì‚­ì œí•œí›„, ë‘ì›ì†Œì˜í•©ì¶œë ¥,ë¦¬ìŠ¤íŠ¸ì¶œë ¥
 		System.out.println(list.removeFirst() + list.removeLast());
 		System.out.println(list);
 	}
