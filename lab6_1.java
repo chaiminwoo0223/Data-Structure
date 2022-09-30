@@ -30,6 +30,6 @@ public class lab6_1 {
 		System.out.println(list.removeFirst() + list.removeLast()); // list의 맨앞원소, 맨뒤원소를 삭제한 후, 합 출력
 		System.out.println(list); // 리스트 출력
 		System.out.println(list.removeFirst() + list.removeLast()); // list의 맨앞원소, 맨뒤원소를 삭제한 후, 합 출력
-		System.out.println(list); // 리스트 출력 // 리스트 출력
+		System.out.println(list); // 리스트 출력
 	}
 }
