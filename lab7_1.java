@@ -6,20 +6,20 @@ import java.util.Stack;
 public class lab7_1 {
 
 	public static void main(String[] args) {
-		System.out.println("lab7_1 : ÃÖ¹Î¿ì");
-		// ¹®ÀÚ ½ºÅÃ °´Ã¼ »ı¼º
+		System.out.println("lab7_1 : ìµœë¯¼ìš°");
+		// ë¬¸ì ìŠ¤íƒ ê°ì²´ ìƒì„±
 		Stack<Character> stack = new Stack<Character>();
-		// »ç¿ëÀÚ·ÎºÎÅÍ ÇÑ ÁßÀÇ ¹®Àå¿­À» ÀÔ·Â¹ŞÀ½
+		// ì‚¬ìš©ìë¡œë¶€í„° í•œ ì˜ ë¬¸ì¥ì—´ì„ ì…ë ¥ë°›ìŒ
 		Scanner input = new Scanner(System.in);
 		String line = input.nextLine();
-		// ¹®ÀÚ¿­ÀÇ ¹®ÀÚ¸¦ ÇÏ³ª¾¿ ½ºÅÃ¿¡ »ğÀÔ
+		// ë¬¸ìì—´ì˜ ë¬¸ìë¥¼ í•˜ë‚˜ì”© ìŠ¤íƒì— ì‚½ì…
 		for(int i=0;i<line.length();i++) {
 			char ch = line.charAt(i);
 			stack.push(ch);
 		}
-		// ½ºÅØÀÇ ¿ë·®À» ¾Ë¾Æ³»¾î Ãâ·Â
+		// ìŠ¤í…ì˜ ìš©ëŸ‰ì„ ì•Œì•„ë‚´ì–´ ì¶œë ¥
 		System.out.println(stack.capacity());
-		// ½ºÅØ¿¡ ÅÖ ºô¶§±îÁö ¹®ÀÚ¸¦ ÇÏ³ª¾¿ »èÁ¦ÇÏ¿© ¼ø¼­´ë·Î Ãâ·Â
+		// ìŠ¤í…ì— í…… ë¹Œë•Œê¹Œì§€ ë¬¸ìë¥¼ í•˜ë‚˜ì”© ì‚­ì œí•˜ì—¬ ìˆœì„œëŒ€ë¡œ ì¶œë ¥
 		while(!stack.isEmpty()) {
 			System.out.print(stack.pop());
 		}
