@@ -17,9 +17,9 @@ public class lab7_1 {
 			char ch = line.charAt(i);
 			stack.push(ch);
 		}
-		// 스텍의 용량을 알아내어 출력
+		// 스택의 용량을 알아내어 출력
 		System.out.println(stack.capacity());
-		// 스텍이 텅 빌때까지 문자를 하나씩 삭제하여 순서대로 출력
+		// 스이 텅 빌때까지 문자를 하나씩 삭제하여 순서대로 출력
 		while(!stack.isEmpty()) {
 			System.out.print(stack.pop());
 		}
