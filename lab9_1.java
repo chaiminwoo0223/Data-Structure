@@ -7,7 +7,7 @@ public class lab_9_1 {
 		int[] dataArray = {3,2,5,7,4,8,-1,0,5,9};
 		// 입력할 원소 수와 같은 용량의 공백 최대힙을 생성
 		MyMaxHeap heap = new MyMaxHeap(dataArray.length);
-		// 데이터 배열에 저장된 원소를 최대힙에 하나씩 삽입한 후, 내용 출력
+		// 데이터 배열에 저장된 원소를 최대힙에 하나씩 삽입한 후, 힙 내용 출력
 		for(int item : dataArray) {
 			heap.add(item);
 			heap.print();
