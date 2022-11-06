@@ -1,7 +1,6 @@
 package lab9_1;
 
 public class lab_9_1 {
-
 	public static void main(String[] args) {
 		System.out.println("lab9_1 : 최민우");
 		// 입력할 원소들을 저장한 데이터 배열
