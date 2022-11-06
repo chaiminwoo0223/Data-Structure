@@ -23,7 +23,7 @@ class MyMaxHeap{
 	    n = 0;
 	    array = new int[capacity];
 	}
-	// 매개변수로 받은 원소 item을 최대힙에 삽입
+	// 매개변수로 받은 원소 item을 배열에 삽입
 	public void add(int item) {
 		array[n++] = item;
 	}
