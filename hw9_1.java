@@ -27,16 +27,30 @@ class MyMaxHeap{
 	// 매개변수로 받은 원소 item을 최대힙에 삽입
 	public void add(int item) {
 		array[n++] = item;
-		if(array[n] < array[(n-1)/2]) {
+		while(n>1 && array[n] < array[n/2]) {
 			temp = array[n];
 			array[n] = array[2*n+1];
 			array[2*n+1] = temp;
-		}	
+		}
+			for(int j=0;j<array.length/2;j++) {
+				if(array[j] < array[2*j+1]) {
+					temp = array[j];
+					array[j] = array[2*j+1];
+					array[2*j+1] = temp;
+				}
+			for(int k=0;k<array.length/2-1;k++) {
+				if(array[k] < array[2*k+2]) {
+					temp = array[k];
+					array[k] = array[2*k+2];
+					array[2*k+2] = temp;
+				}
+			}
+		}
 	}
 	// 최대힙의 내용을 확인하기 위해 배열에 저장된 순서대로 최대힙 내용을 출력
 	public void print() {
-		for(int k=0;k<n;k++) {
-			System.out.print(array[k]+" ");
+		for(int l=0;l<n;l++) {
+			System.out.print(array[l]+" ");
 		}
 		System.out.println();
 	}
