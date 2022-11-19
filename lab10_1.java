@@ -33,7 +33,7 @@ public class lab10_1 {
 		System.out.println(g1.hasEdge(4,1));
 		// g1의 정점 0, 정점 3의 out-degree를 출력
 		System.out.println(g1.outDegree(0));
-	    System.out.println(g1.outDegree(3));
+	        System.out.println(g1.outDegree(3));
 		System.out.println();
 	}
 }
@@ -97,7 +97,7 @@ class ListGraph{
 			newNode.link = list[v1];
 			list[v1] = newNode;
 		}
-		}
+	}
 	// 인접 리스트 출력
 	public void printAdjList() {
 		for(int i=0;i<n;i++) {
