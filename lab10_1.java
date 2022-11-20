@@ -2,7 +2,7 @@ package lab10_1;
 
 public class lab10_1 {
 	public static void main(String[] args) {
-		System.out.println("lab 10_1 : 최민우");
+		System.out.println("lab10_1 : 최민우");
 		// 정점수 5인 방향 그래프 MatrixGraph g1을 생성하고 간선 삽입 후, 인접 행렬 내용 출력
 		MatrixGraph g1 = new MatrixGraph(5);
 		g1.insertEdge(0,4);
