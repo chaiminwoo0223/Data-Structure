@@ -19,19 +19,19 @@ public class hw11_1 {
 			System.out.print(array[i]+" ");
 		}
 	}
-}
-// array에 저장된 단어들을 사전순으로 삽입 정렬
-class insertionSort(String[] array) {
-	int i, j;
-	String item;
-	for(i=1;i<array.length;i++) {
-		item = array[i];
-		// item이 삽입될 위치 j를 찾음
-		for(j=i;j>0;j--) {
-			if(array[j-1].compareTo(item) > 0) {
-			array[j] = array[j-1];
+	// array에 저장된 단어들을 사전순으로 삽입 정렬
+	private static void insertionSort(String[] array) {
+		int i, j;
+		String item;
+		for(i=1;i<array.length;i++) {
+			item = array[i];
+			// item이 삽입될 위치 j를 찾음
+			for(j=i;j>0;j--) {
+				if(array[j-1].compareTo(item) > 0) {
+				array[j] = array[j-1];
+				}
 			}
+			array[j] = item;
 		}
-		array[j] = item;
 	}
 }
