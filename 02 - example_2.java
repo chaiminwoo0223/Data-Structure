@@ -18,10 +18,9 @@ public class hw5_1 {
 		list.add(12,9999);
 		System.out.println(list);
 	}
-	//배열을 이용하여 정수 리스트를 구현하는 클래스
-
 }
-class MyArrayList{       //public class hw5_1과 충돌을 피하기 위해서, class MyArrayList로 작성
+//public class hw5_1과 충돌을 피하기 위해서, class MyArrayList로 작성
+class MyArrayList{       
 	private int[] array; //원소를 저장할 배열
 	private int numItems; //배열에 저장된 원소 수(리스트 길이)
 	public static final int DEFAULT_CAPACITY = 100; //배열의 기본 용량
