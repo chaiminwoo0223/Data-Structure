@@ -23,15 +23,17 @@ public class hw11_1 {
 	private static void insertionSort(String[] array) {
 		int i, j;
 		String item;
-		for(i=1;i<array.length;i++) {
+		String temp = null;
+		for(i=0;i<array.length-1;i++) {
 			item = array[i];
 			// item이 삽입될 위치 j를 찾음
-			for(j=i;j>0;j--) {
+			for(j=i+1;j<array.length+1;j++) {
 				if(array[j-1].compareTo(item) > 0) {
-				array[j] = array[j-1];
+					temp = array[i];
+					array[i] = array[j-1];
+					array[j-1] = temp;
 				}
 			}
-			array[j] = item;
 		}
 	}
 }
